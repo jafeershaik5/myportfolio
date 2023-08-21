@@ -20,6 +20,8 @@ Welcome to my portfolio website built using React.js! This responsive website sh
 
 If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. Your contributions are greatly appreciated!
 
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [jafeershaik5]. Thanks!
+
 ## Contact
 
 You can reach out to me via email at [jafeershaik5@gmail.com](mailto:jafeershaik5@gmail.com) 
