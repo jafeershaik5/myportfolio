@@ -36,7 +36,7 @@ const Navbar = () => {
                 <NavLink to='/resume' onClick={handleNavLinkClick}>Resume</NavLink>
                 {/* <NavLink to='/projects'>Projects</NavLink> */}
                 <NavLink to='/contactme' onClick={handleNavLinkClick}>ContactMe</NavLink>
-                <a className='fork' href='https://github.com/jafeershaik5' target='_blank' rel="noreferrer">
+                <a className='fork' href='https://github.com/jafeershaik5/myportfolio' target='_blank' rel="noreferrer">
                     <LuGitFork /> <LuStar />
                 </a>
             </div>
