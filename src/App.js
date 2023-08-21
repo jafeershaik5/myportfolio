@@ -7,11 +7,11 @@ import ContactMe from './Components/ContactMe/ContactMe';
 import Resume from './Components/Resume/Resume';
 import Projects from './Components/Projects/Projects';
 import './Styles.css';
+import './App.css';
 import Footer from './Components/Footer';
 import PreLoader from './Components/PreLoader';
 
 function App() {
-
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -21,25 +21,28 @@ function App() {
     }, []);
 
     return (
-        <>
-            {loading ? (<PreLoader />
+        <div className='app-container'>
+            {loading ? (
+                <PreLoader />
             ) : (
                 <>
-                    <Navbar />
-                    <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='/about' element={<About />} />
-                        <Route path='/contactme' element={<ContactMe />} />
-                        <Route path='/resume' element={<Resume />} />
-                        <Route path='/projects' element={<Projects />} />
-                        <Route path='*' element={<Home />} />
-                    </Routes>
-                    <Footer />
+                    <Navbar className='navbar' />
+                    <div className='content'>
+                        <Routes>
+                            <Route path='/' element={<Home />} />
+                            <Route path='/about' element={<About />} />
+                            <Route path='/contactme' element={<ContactMe />} />
+                            <Route path='/resume' element={<Resume />} />
+                            <Route path='/projects' element={<Projects />} />
+                            <Route path='*' element={<Home />} />
+                        </Routes>
+                    </div>
+                    <Footer className='footer' />
                 </>
             )}
-
-        </>
+        </div>
     );
 }
+
 
 export default App;

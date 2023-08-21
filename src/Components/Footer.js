@@ -7,8 +7,8 @@ const Footer = () => {
     let year = date.getFullYear();
     return (
         <>
-            <footer className='container footer-container flex'>
-                <p>Designed and Developed by ShaikJafeer</p>
+            <footer className='container footer flex'>
+                <p>Designed and Developed by JafeerShaik</p>
                 <p>Copyright © {year} SJ</p>
                 <div className='ficons-container flex'>
                     <a className='fsocial-icons' href='https://www.instagram.com/___jafeer___/' target='_blank' rel="noreferrer"><FaInstagram /></a>

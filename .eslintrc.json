@@ -36,5 +36,8 @@
             "error",
             "always"
         ]
+    },
+    "globals": {
+        "process": true
     }
 }

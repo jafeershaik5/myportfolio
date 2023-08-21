@@ -1,7 +1,7 @@
 :root {
     --padding-around: 0 6rem;
     --primary-text-color: #ECECEC;
-    --secondary-text-color: #f16ef3ff;
+    --secondary-text-color: #e553e8;
 }
 
 .flex {
@@ -48,10 +48,29 @@ span {
 }
 
 .container {
-    max-width: 1200px;
     margin-inline: auto;
-    margin-top: 3.8rem;
+}
 
+/* ------- */
+/* --scroll bar-- */
+/* ------- */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d1950;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(165, 110, 201, 0.959);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-text-color);
+    border-radius: 12px;
 }
 
 /* ------- */
@@ -67,7 +86,6 @@ span {
     z-index: 999999;
     background-color: #0c0513;
     align-items: center;
-
 
 }
 
@@ -86,7 +104,6 @@ span {
     display: flex;
     justify-content: space-between;
     padding: .5rem;
-    max-width: 1200px;
     margin-inline: auto;
     transition: top 0.3s ease-in-out;
     position: fixed;
@@ -97,8 +114,9 @@ span {
 }
 
 .logo a img {
-    height: 2rem;
+    height: 2.5rem;
     padding-top: 0.3rem;
+    padding-inline: 0.5rem;
     filter: invert(100%);
     transition: .3s ease;
 }
@@ -149,6 +167,21 @@ span {
     border: 1px solid white;
 }
 
+.mob-nav-links {
+    display: none;
+}
+
+.nav-toggle-btn {
+    display: none;
+}
+
+.bars-btn {
+    color: var(--secondary-text-color);
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: .5rem 1rem 0;
+}
 
 /* ------- */
 /* --Home-- */
@@ -157,6 +190,7 @@ span {
 .home-container {
     padding: 5rem 0.5rem;
     justify-content: space-between;
+    margin-block: 3.8rem;
 }
 
 .wave {
@@ -213,13 +247,16 @@ span {
 }
 
 .maintext {
-    flex-grow: 1;
     flex-direction: column;
 
 }
 
 .maintext h2 span {
     font-size: 2.5rem;
+}
+
+.Typewriter {
+    padding-block: 2rem;
 }
 
 .devimg {
@@ -229,10 +266,8 @@ span {
 
 .devimg img {
     height: 520px;
+    object-fit: fill;
 }
-
-
-
 
 .maintext h3 span {
     display: inline-block;
@@ -242,6 +277,11 @@ span {
 .home2-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3.8rem;
+}
+
+.home-info {
+    padding-inline: 2rem;
 }
 
 .home-info p {
@@ -249,7 +289,7 @@ span {
 }
 
 .home2-container div img {
-    padding: 4rem 3rem 1rem;
+    padding: 2rem 3rem;
     height: 350px;
 }
 
@@ -260,6 +300,7 @@ span {
 .home3-container {
     display: grid;
     place-items: center;
+    margin-bottom: 3.8rem;
 }
 
 .home3-container h2 {
@@ -293,6 +334,7 @@ span {
 
 .about-container {
     padding: 3rem 1rem;
+    margin-block: 3.8rem;
 }
 
 .about-container h2 span {
@@ -322,6 +364,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 3.8rem;
 }
 
 .skill-card {
@@ -340,14 +383,104 @@ span {
 }
 
 /* ------- */
+/* --Resume-- */
+/* ------- */
+
+.resume-container {
+    padding: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 3.8rem;
+    gap: 2rem;
+}
+
+.download-btn {
+    text-decoration: none;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: .3rem 2.5rem;
+    color: var(--primary-text-color);
+    background-color: purple;
+}
+
+.download-btn:hover {
+    background-color: lightpink;
+}
+
+.document {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+/* ------- */
+/* --Contactme-- */
+/* ------- */
+
+.contact-container {
+    margin-bottom: 3.8rem;
+}
+
+.contact-header {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1.3rem;
+    width: 25rem;
+    margin: 0 auto;
+    flex-shrink: 9;
+}
+
+form label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+form input[type="submit"] {
+    background-color: #c559ed;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    transition: .3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #eb5def;
+}
+
+/* ------- */
 /* --footer-- */
 /* ------- */
 
-.footer-container {
-    background-color: rgba(0, 0, 0, 0.166);
+.footer {
+    background-color: rgba(0, 0, 0, 0.3);
     justify-content: space-around;
     color: white;
     align-items: center;
+    width: 100%;
+    margin-inline: auto;
+
 }
 
 .ficons-container {
@@ -359,4 +492,234 @@ span {
     margin: 1rem;
     font-size: 1.3rem;
     color: white;
+}
+
+
+/* -------------
+media-queries
+------------- */
+/* 2xl */
+@media (min-width:1536px) {
+    .container {
+        max-width: 1400px;
+        margin-inline: auto;
+    }
+
+}
+
+/* 2xl */
+@media (max-width:1536px) {
+    .container {
+        max-width: 1280px;
+    }
+
+}
+
+/* xl */
+@media (max-width:1280px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .home-container {
+        padding: 5rem 1.5rem;
+        justify-content: space-between;
+        margin-block: 3.8rem;
+    }
+
+    .devimg img {
+        height: 420px;
+        object-fit: fill;
+    }
+}
+
+/* lg screen */
+@media (max-width:1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .devimg img {
+        height: 250px;
+        object-fit: fill;
+    }
+
+    .home2-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .maintext h1 {
+        font-size: 2rem;
+    }
+
+    .maintext h2 span {
+        font-size: 2rem;
+    }
+}
+
+/* md screens */
+@media (max-width:768px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        padding-block: 2.5rem;
+    }
+
+    .wave {
+        font-size: 2rem;
+    }
+
+    .Typewriter {
+        width: 310px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .fsocial-icons {
+        margin: 0.3rem 0.8rem 0.2rem;
+    }
+
+    .contact-header h2 {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* sm screens */
+@media (max-width:640px) {
+    .container {
+        max-width: 475px;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .mob-nav-links {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        box-shadow: 2px 12px 18px 1px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+    }
+
+    .mob-nav-links a {
+        color: var(--primary-text-color);
+        margin: 1rem
+    }
+
+    .mob-nav-links a.active {
+        border-bottom: 1px solid var(--secondary-text-color);
+    }
+
+    .nav-toggle-btn {
+        display: block;
+        z-index: 20;
+    }
+
+    .react-pdf__Page {
+        width: 475px !important;
+    }
+}
+
+/* xs screens */
+@media (max-width:475px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2rem !important;
+    }
+
+    h2 {
+        font-size: 1.1rem !important;
+    }
+
+    span {
+        font-size: 1rem !important;
+    }
+
+    h2 span {
+        font-size: 1.2rem !important;
+    }
+
+
+    p span {
+        font-size: .8rem !important;
+    }
+
+    p {
+        font-size: .8rem !important;
+        text-align: center;
+        line-height: 1.7rem;
+    }
+
+    .home-container {
+        padding-inline: 0;
+        padding-bottom: 0;
+        gap: 1rem;
+        align-content: center;
+    }
+
+    .wave {
+        font-size: 1.2rem;
+    }
+
+    .devimg img {
+        width: 300px;
+        height: 200px;
+        object-fit: fill;
+    }
+
+    .Typewriter {
+        margin: 0;
+        width: 210px;
+        padding-block: .3rem;
+    }
+
+    .home2-container {
+        display: flex;
+    }
+
+    .avtrimg img {
+        width: 250px;
+        height: 250px !important;
+        padding: 0 !important;
+    }
+
+    .skill-card {
+        font-size: 2.0rem !important;
+        padding: 0.6rem 1.5rem 0;
+        margin: 0.3rem;
+    }
+
+    .about-container {
+        margin-bottom: 1rem;
+    }
+
+    .form-box {
+        width: 300px;
+    }
+
+    .react-pdf__Page {
+        width: 280px !important;
+        margin: 0;
+    }
+
 }
