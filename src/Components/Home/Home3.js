@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsInstagram, BsGithub } from 'react-icons/bs';
+import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Home3 = () => {
     return (
@@ -9,6 +9,7 @@ const Home3 = () => {
             <div className='socialicons flex'>
                 <a className='social-icons' href='https://www.instagram.com/___jafeer___/' target='_blank' rel="noreferrer"><BsInstagram /></a>
                 <a className='social-icons' href='https://github.com/jafeershaik5' target='_blank' rel="noreferrer"><BsGithub /></a>
+                <a className='social-icons' href='https://linkedin.com/in/jafeershaik' target='_blank' rel="noreferrer"><BsLinkedin /></a>
             </div>
         </section>
     );

@@ -490,7 +490,7 @@ form input[type="submit"]:hover {
 .fsocial-icons {
     display: inline-block;
     margin: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
 }
 
@@ -634,6 +634,10 @@ media-queries
 
     .react-pdf__Page {
         width: 475px !important;
+    }
+
+    .fsocial-icons {
+        font-size: 0.7rem;
     }
 }
 

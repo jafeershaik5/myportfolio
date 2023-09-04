@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
-import { BsGithub } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Footer = () => {
     let date = new Date();
@@ -13,6 +13,7 @@ const Footer = () => {
                 <div className='ficons-container flex'>
                     <a className='fsocial-icons' href='https://www.instagram.com/___jafeer___/' target='_blank' rel="noreferrer"><FaInstagram /></a>
                     <a className='fsocial-icons' href='https://github.com/jafeershaik5' target='_blank' rel="noreferrer"><BsGithub /></a>
+                    <a className='fsocial-icons' href='https://linkedin.com/in/jafeershaik' target='_blank' rel="noreferrer"><BsLinkedin /></a>
                 </div>
             </footer>
         </>
