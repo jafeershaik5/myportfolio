@@ -632,10 +632,6 @@ media-queries
         z-index: 20;
     }
 
-    .react-pdf__Page {
-        width: 475px !important;
-    }
-
     .fsocial-icons {
         font-size: 0.7rem;
     }
