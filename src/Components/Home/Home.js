@@ -14,7 +14,7 @@ const Home = () => {
                     <h1>
                         Hii There!<span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
                     </h1>
-                    <h2>I&apos;m <span>JAFEER SHAIK</span></h2>
+                    <h2>I&apos;m <span>JASMINE SHAIK</span></h2>
                     <h3>
                         <TypeWriter />
                     </h3>
