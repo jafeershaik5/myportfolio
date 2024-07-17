@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Particle from '../Particle';
 import { BsDownload } from 'react-icons/bs';
-import resume from '../../Assets/resume.pdf';
+import resume from '../../Assets/jafeerShaikResume.pdf';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';

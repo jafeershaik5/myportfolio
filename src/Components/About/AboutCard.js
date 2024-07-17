@@ -1,11 +1,11 @@
 import React from 'react';
-import { DiJavascript1, DiReact, DiGit, DiCss3, DiHtml5 } from 'react-icons/di';
+import { DiJavascript1, DiReact, DiGit, DiCss3, DiHtml5, DiPython } from 'react-icons/di';
 // , DiMongodb, DiNodejs
 import { SiMacos, SiVisualstudiocode, SiVercel } from 'react-icons/si';
 // , SiExpress
 
 const AboutCard = () => {
-    const skillsetIcons = [DiJavascript1, DiReact, DiGit, DiCss3, DiHtml5];
+    const skillsetIcons = [DiJavascript1, DiReact, DiPython, DiGit, DiCss3, DiHtml5];
     // , DiNodejs, DiMongodb, SiExpress
     const toolsIcons = [SiMacos, SiVisualstudiocode, SiVercel];
 
