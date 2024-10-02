@@ -176,7 +176,7 @@ span {
 }
 
 .bars-btn {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
@@ -380,6 +380,105 @@ span {
 .skill-card:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 2px purple;
+}
+
+
+
+/* ------- */
+/* --Projects-- */
+/* ------- */
+
+.projects-container {
+    padding: 3rem 0.5rem;
+    margin-block: 3.8rem;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.projects-heading>h2,
+.projects-heading>p {
+    text-align: center;
+}
+
+.projects-heading>h2 span {
+    font-size: 2rem;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3.8rem;
+}
+
+
+.p-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    color: var(--primary-text-color);
+    padding: 1.5rem 1.5rem;
+    margin: 1rem;
+    border: 2px solid purple;
+    border-radius: 10px;
+    transition: 0.3s;
+    height: 450px;
+    width: 280px;
+
+}
+
+.p-card:hover {
+    box-shadow: 0px 0px 10px 2px purple;
+}
+
+.p-card-image {
+    height: 116px;
+    width: 180px;
+    align-self: center;
+}
+
+
+/* Card title */
+.p-card-name {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Card description */
+.p-card-description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: small;
+    line-height: 1.6;
+}
+
+/* Card links container */
+.p-card-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Card links */
+.p-card-links a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: .3rem .5rem;
+    font-size: small;
+    color: var(--primary-text-color);
+    background-color: purple;
+}
+
+.p-card-links a:hover {
+    background-color: lightpink;
+
 }
 
 /* ------- */
